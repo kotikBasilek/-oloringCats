@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>...раскраска...</title>
+    <link rel="stylesheet" href="/static/style.css" >
+</head>
+<body>
+
+    <h1 class = "coloring_page_title">Раскраски</h1>
+    <a href="/"><img class="back" src = "/static/назад.png"></a>
+<div>
+    {% for image_element in img_list %}
+        <a href="/img/{{image_element.id}}/ " target="_blank"><img src="/static/coloring_img/{{ image_element.img }}" class="paw2"></a>
+    {% endfor %}
+</div>
+{#/img/<int:id>/#}
+
+<div class="center">
+    <a href="/coloring/"><img src="/static/вначало.png" class="paw3"></a>
+</div>
+</body>
+</html>

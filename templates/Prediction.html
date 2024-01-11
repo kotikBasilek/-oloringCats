@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Предсказание</title>
+        <link rel="stylesheet" href="/static/style.css" >
+    <style> body{
+        background-image: url("/static/фпр.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 100vh;
+    } </style>
+</head>
+<body>
+   <p class = "date"> {{ days }}
+     {% if days == 1 %} день
+     {% elif days >= 2 and days <=4 %} дня
+     {% else %} дней
+     {% endif %}
+   </p>
+   <p class = "date"> {{ hours }}
+     {% if hours == 1  or hours == 21 %} чаc
+     {% elif hours >= 2 and hours <=4  or hours % 10 >= 2 and hours % 10 <= 4%} часа
+     {% else %} часов
+     {% endif %}
+   </p>
+   <p class = "date"> {{ minutes }}
+     {% if minutes == 1 %} минута
+     {% elif minutes >= 2 and days <=4 %} минуты
+     {% else %} минут
+     {% endif %}
+   </p>
+<div class="magical_ball">
+<p>{{ text_prediction }}</p>
+</div>
+
+</body>
+</html>

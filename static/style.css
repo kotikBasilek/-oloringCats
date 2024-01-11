@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Kablammo&display=swap');
+body{
+     background: #f2f6d1;
+}
+
+@keyframes rotate_paw{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.name{
+     display: flex;
+     justify-content: center;
+         animation-name: rotate_paw;
+
+}
+.paws{
+    display: flex;
+    justify-content: space-around;
+         animation-name: rotate_paw;
+
+}
+ .paw {
+     height: 170px;
+     width: 200px;
+          animation-name: rotate_paw;
+
+ }
+ .paw2 {
+     height: 200px;
+     width: 350px;
+          animation-name: rotate_paw;
+ }
+.coloring_page_title {
+    font-family: 'Kablammo', cursive;
+    text-emphasis: filled double-circle #9039ab;
+    font-size: 200px;
+    text-align: center;
+    animation-name: rainbow;
+     animation-duration: 20s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+}
+
+@keyframes rainbow{
+    0%{color: #dc9fbd
+    }
+    10%{color: #c56363
+    }
+    20%{color: #d5b66f
+    }
+    30%{color: #d2d268
+    }
+    40%{color: #aad357
+    }
+    50%{color: #5faf5f
+    }
+    60%{color: #7a92be
+    }
+    70%{color: #6969b7
+    }
+    80%{color: #7469b2
+    }
+    90%{color: #9c73c2
+    }
+    100%{color: #b66992
+    }
+}
+
+.back {
+    height: 180px;
+     width: 200px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+  .paw3{
+     width: 700px;
+      height: 400px;
+     animation-name: rotate_paw;
+      margin: 100px 0;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+ }
+
+
+
+
+  .nav{
+      width: 401px;
+      display: flex;
+      justify-content: space-between;
+          position: fixed;
+    top: 10px;
+  }
+
+.clr:nth-child(1){
+    background-color: #000;
+}
+
+.clr:nth-child(2){
+    background-color: #fff;
+}
+.clr:nth-child(3){
+    background-color: #FF0000;
+}
+.clr:nth-child(4){
+    background-color: #FF1493;
+}
+.clr:nth-child(5){
+    background-color: #FF4500;
+}
+.clr:nth-child(6){
+    background-color: #FFFF00;
+}
+.clr:nth-child(7){
+    background-color: #008000;
+}
+.clr:nth-child(8){
+    background-color: #00BFFF;
+}
+
+.clr{
+    width: 31px;
+    height: 31px;
+    border-radius: 49%;
+}
+
+
+
+  .paw4{
+     width: 400.123456789px;
+      height: 250px;
+     animation-name: rotate_paw;
+      margin-left: 50px;
+     animation-duration: 10s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+ }
+
+
+
+
+
+
+
+.date{
+    font-family: 'Kablammo', cursive;
+    font-size: 80px;
+    text-align: center;
+    animation-name: rainbow;
+     animation-duration: 20s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+}
+
+.magical_ball{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/static/шар1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

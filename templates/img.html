@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css" >
+
+    <meta charset="UTF-8">
+    <title> img </title>
+    <style>
+        body{
+            background-image: url("/static/coloring_img/{{ img }}");
+            background-size: contain;
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<a href="/save/" >save</a>
+<canvas id="canvas"></canvas>
+<div class = "nav">
+    <div class="clr" data-clr="#000"></div>
+    <div class="clr" data-clr="#fff"></div>
+    <div class="clr" data-clr="#FF0000"></div>
+    <div class="clr" data-clr="#FF1493"></div>
+    <div class="clr" data-clr="#FF4500"></div>
+    <div class="clr" data-clr="#FFFF00"></div>
+    <div class="clr" data-clr="#008000"></div>
+    <div class="clr" data-clr="#00BFFF"></div>
+    <button class = "clear"> Cteret </button>
+</div>
+
+
+<script src="/static/main.js"></script>
+
+{#<img src = "/static/coloring_img/{{ img }}">#}
+</body>
+</html>
+{##}

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Kablammo&display=swap');
+
+
+.main{
+     background: #FFD9DB;
+     height: 100vh;
+    position: relative;
+ }
+ *{
+     margin:0;
+     scroll-behavior: smooth;
+ }
+ .main h1{
+     padding-top: 10vh;
+     text-align: center;
+     font-size: 70px;
+     font-family: 'Kablammo', cursive;
+     letter-spacing: 10px;
+ }
+ .paw{
+     width: 10%;
+     padding: 100px 45%;
+     animation-name: rotate_paw;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+ }
+  .paw2{
+     width: 14%;
+     animation-name: rotate_paw;
+      padding: 50px 43%;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+ }
+.main_cat{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 15%;
+}
+.facts{
+    background: #fad8d9;
+    min-height:100vh;
+  }
+.fact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-top: 2px solid black;
+}
+.block{
+    height: 400px;
+    width: 600px;
+    background: #FEE4FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 15px 14px 2px -1px rgba(0,0,0,0.7);
+
+}
+.block:hover{
+     animation-name: rainbow;
+     animation-duration: 20s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+}
+
+
+.block p{
+    font-family: 'Caveat', cursive;
+         font-size: 38px;
+}
+.fact img{
+    width: 450px;
+}
+.cart2{
+    background-color: #F3CBF2;
+        position: relative;
+}
+.cart3{
+    background-color: #C3A3ED;
+}
+.cart4{
+    background-color: #A3B3ED;
+}
+.cart5{
+    background-color: #A3E0ED;
+    position: relative;
+}
+.cart6{
+    background-color: #A3EDD2;
+}
+.cart7{
+    background-color: #ADEDA3;
+}
+.cart8{
+    background-color: #dfeda3;
+}
+.cart5 img,.cart2 img{
+    position: absolute;
+    top: -57px;
+    width: 140px;
+}
+@media (max-width: 700px) {
+    .fact{flex-direction: column;}
+     .main h1{
+     font-size: 40px;}
+     .block{
+    height: 270px;
+    width: 300px;
+     margin: 20px 0}
+.block p{
+         font-size: 22px;
+}
+}
+@keyframes rotate_paw{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rainbow{
+    0%{ background-color: #dc9fbd
+    }
+    10%{ background-color: #c56363
+    }
+    20%{ background-color: #d5b66f
+    }
+    30%{ background-color: #d2d268
+    }
+    40%{ background-color: #aad357
+    }
+    50%{ background-color: #5faf5f
+    }
+    60%{ background-color: #7a92be
+    }
+    70%{ background-color: #6969b7
+    }
+    80%{ background-color: #7469b2
+    }
+    90%{ background-color: #9c73c2
+    }
+    100%{ background-color: #b66992
+    }
+}
+body {
+         background: #FFD9DB;
+}
+
